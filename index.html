@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div class="container">
+    <div class="width">
+        <h5>login</h5>
+        <div class="form-floating mb-3">
+            <input
+                    type="text"
+                    class="form-control login"
+                    id="floatingInput"
+                    placeholder="Enter login"
+                    pattern="^\S+[a-zA-Z]{3,16}$"
+            >
+            <label for="floatingInput">Enter login</label>
+        </div>
+        <h5>Password</h5>
+        <div class="form-floating mb-3">
+            <input
+                    type="password"
+                    class="form-control password"
+                    id="floatingPassword"
+                    placeholder="Enter password"
+                    pattern="^\S{4,16}"
+            >
+            <label for="floatingPassword">Enter password</label>
+        </div>
+        <h5>Email address</h5>
+        <div class="form-floating mb-3">
+            <input
+                    type="email"
+                    class="form-control email"
+                    id="floatingEmail"
+                    placeholder="Enter email"
+                    pattern="\S+@\S+\.\S+"
+            >
+            <label for="floatingEmail">Enter email</label>
+        </div>
+        <div class="error">
+            Заповніть поля вірно!
+        </div>
+        <button type="button" class="btn btn-outline-success btn_add">Add user</button>
+        <button type="button" class="btn btn-info btn_edit_user" style="display: none">Edit user</button>
+    </div>
+    <div class="width">
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Login</th>
+                <th scope="col">Password</th>
+                <th scope="col">Email</th>
+                <th scope="col">Edit</th>
+                <th scope="col">btn</th>
+            </tr>
+            </thead>
+            <tbody class="tbody">
+            </tbody>
+        </table>
+    </div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
